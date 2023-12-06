@@ -356,7 +356,7 @@ ul li {
   transform: scaleY(1);
 }
 
-.numberCaroussel {
+.numberCarrousel {
   position: absolute;
   bottom: 0;
   color: #FFFFFF;

@@ -22,7 +22,9 @@ function Slide({ currentLogement }) {
     return (
         <div className="carrousel">
             <img className="imgCarrousel" src={currentImage} alt="imageAppartement"/>
-            <p className="numberCaroussel">
+            {currentLogement.pictures.length === 1 ? null : (
+            <div>
+            <p className="numberCarrousel">
             {currentSlide + 1} / {currentLogement.pictures.length}
             </p>
             <div className="btnCarrousel">
@@ -33,6 +35,8 @@ function Slide({ currentLogement }) {
                     <img src={arrowRight} alt="Suivant" />
                 </button>
             </div>
+            </div>
+            )}
         </div>
     );
 }
